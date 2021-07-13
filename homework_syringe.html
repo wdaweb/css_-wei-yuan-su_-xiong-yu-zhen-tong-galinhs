@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syringe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 1000px;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .container::after {
+            content: '';
+            width: 490px;
+            height: 15px;
+            position: absolute;
+            top: -85px;
+            left: 15px;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-image: repeating-linear-gradient(90deg, #000 0, #000 1px, transparent 0, transparent 4mm);
+        }
+
+        .left::before {
+            content: '';
+            width: 50px;
+            height: 108px;
+            border: 1px solid #333;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+            left: -113px;
+            border-radius: 10%;
+            background: linear-gradient(rgb(255, 255, 255) 5%, rgba(0, 0, 5, 0.2) 70%, rgba(0, 0, 5, 0.6) 60%, rgba(0, 0, 5, 0.2) 70%, rgb(255, 255, 255) 90%);
+        }
+
+        .left {
+            width: 250px;
+            height: 110px;
+            border: 1px solid #333;
+            margin: auto;
+            position: relative;
+            top: 100px;
+            left: -120px;
+            background: linear-gradient(rgb(255, 255, 255) 20%, rgba(0, 0, 5, 0.2) 70%, rgba(0, 0, 5, 0.6) 65%, rgba(0, 0, 5, 0.2) 70%, rgb(255, 255, 255) 90%);
+        }
+
+        .left::after {
+            content: '';
+            width: 60px;
+            height: 75px;
+            border: 1px solid #333;
+            border-left: none;
+            border-right: none;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+            left: -61px;
+            background: linear-gradient(rgb(255, 255, 255) 15%, rgba(0, 0, 5, 0.2) 80%, rgba(0, 0, 5, 0.6) 70%, rgba(0, 0, 5, 0.2) 0%, rgb(255, 255, 255) 95%);
+        }
+
+        .txt {
+            color: gray;
+            font-size: 1rem;
+            position: absolute;
+            bottom: 0;
+            margin: auto auto auto 2px;
+        }
+
+        .right::before {
+            content: '';
+            width: 60px;
+            height: 75px;
+            border: 1px solid #333;
+            border-top-right-radius: 10%;
+            border-bottom-right-radius: 10%;
+            border-left: none;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 231px;
+            background: linear-gradient(rgb(255, 255, 255) 15%, rgba(0, 0, 5, 0.2) 80%, rgba(0, 0, 5, 0.6) 70%, rgba(0, 0, 5, 0.2) 0%, rgb(255, 255, 255) 95%);
+        }
+
+        .right {
+            width: 230px;
+            height: 110px;
+            border: 1px solid #333;
+            border-left: 60px solid #000;
+            margin: auto;
+            position: relative;
+            top: -12px;
+            left: 110px;
+            background: linear-gradient(rgb(255, 255, 156) 20%, rgba(0, 0, 5, 0.2) 70%, rgba(0, 0, 5, 0.6) 65%, rgba(0, 0, 5, 0.2) 70%, rgb(255, 255, 156) 90%);
+        }
+
+        .right::after {
+            content: '';
+            width: 80px;
+            height: 2px;
+            background: #333;
+            border-left: none;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 291px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="txt">Made in Taiwan</div>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
